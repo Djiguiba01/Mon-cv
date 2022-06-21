@@ -3,12 +3,17 @@
                
             }
 .Tout{
-          box-shadow: 30px 0px 40px rgb(196, 196, 196), -30px, 0px 40px rgb(196, 196, 196);
-          margin: auto;
-          max-width: 900px;
+  box-shadow: 30px 0px 40px rgb(196, 196, 196), -30px, 0px 40px rgb(196, 196, 196);
+  margin: auto;
+  max-width: 900px;
+  display: flex;
+    flex-direction: column;
 
-            }
-
+    }   
+.head{
+  display: flex;
+  width: 100%;
+}
 header{
  	height: 160px;
  	padding-top: 20px;
@@ -17,13 +22,20 @@ header{
  	background-color: #95A2B5;
                 
             }
-  .photo{
+  /*.photo{
  	 margin-left: 3%;
+    border-radius:50% solid;
+   
  	  border-radius:50%;
  	  width: 150px;
  	  height: 150px;
  	  overflow: hidden;
  	  
+            }*/
+            .photo{
+              width: 200px;
+              padding: 10px;
+            }
             }
             .info{
               margin-right: 10px;
@@ -34,9 +46,7 @@ header{
               color: black;
             }
            .des{
-
- 	margin-left: 32%;
- 	margin-top: -18%;
+              width: calc(100% - 200px)
             }
             .Qui-suis-je{
               font-size: 15px;
@@ -66,13 +76,23 @@ header{
             }
 
             .Corps{
- 	            margin-top: -19.8%;
-
+ 	            /*margin-top: -19.8%;*/
+              display: flex;
             }
 
-
+            nav{
+              background-color: #57739D;
+              color: #FFFFFF;
+              width: 200px;
+              padding: 10px;
+            }
+            aside{
+              background-color: #FFFFFF;
+              color: #203572;
+              width: calc(100% - 200px);
+            }
 /*DROITE*/
-          aside {
+          /*aside {
          
            
  	             margin-left:31%;
@@ -83,7 +103,7 @@ header{
                 color: #203572;
 
 
-            }
+            }*/
             .section-droite{
               padding-top: 3%;
             }
@@ -91,7 +111,7 @@ header{
               font-size: 20px;
             }
        /*GAUCHE....................................*/     
-nav{
+/*nav{
 	
 	margin-right: 69%;
 			padding-left: 3%;
@@ -103,14 +123,28 @@ nav{
             .section-gauche{
               padding-top: 3%;
             }
-
+*/
 
 /*Responsive Media Querries */
-@media screen and (max-width:823px){
-    .right-title::after{
-        width: 40%;
+
+
+@media screen and (max-width: 823px){
+    .Tout{
+        width: 100%;
+    }
+    .head{
+      width: 100%;
+      flex-direction: column;
+    }
+    .Corps{
+      width: 100%;
+      flex-direction: column;
+    }
+    nav, aside{
+      width: 100%;
     }
 }
+/*
 @media screen and (max-width:681px){
     .right-title::after{
         width: 30%;
@@ -146,4 +180,4 @@ nav{
     .name{
         font-size: 1.5rem;
     }
-}
+}*/
