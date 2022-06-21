@@ -1,0 +1,149 @@
+ body{
+ 	font-family: 'Segeo UI',Tahoma, Geneva, verdana, sans-serif; 
+               
+            }
+.Tout{
+          box-shadow: 30px 0px 40px rgb(196, 196, 196), -30px, 0px 40px rgb(196, 196, 196);
+          margin: auto;
+          max-width: 900px;
+
+            }
+
+header{
+ 	height: 160px;
+ 	padding-top: 20px;
+ 	color: black;
+ 	border-color:#333;
+ 	background-color: #95A2B5;
+                
+            }
+  .photo{
+ 	 margin-left: 3%;
+ 	  border-radius:50%;
+ 	  width: 150px;
+ 	  height: 150px;
+ 	  overflow: hidden;
+ 	  
+            }
+            .info{
+              margin-right: 10px;
+            }
+            .nom{
+              font-size: 20px;
+              font-weight: bold;
+              color: black;
+            }
+           .des{
+
+ 	margin-left: 32%;
+ 	margin-top: -18%;
+            }
+            .Qui-suis-je{
+              font-size: 15px;
+            }
+            h3{
+            	color: #3FC7DF;
+            	font-weight: bold;
+            	letter-spacing: .1rem;
+            	font-size: 20px;
+            }
+            h2{
+              
+               color: #3FC7DF;
+
+            }
+            .poste{
+ 	            color: black;
+ 	            font-weight: bold;
+ 	            letter-spacing: .1rem;
+
+            }
+             .cont{
+ 	            color: black;
+ 	            font-weight: bold;
+ 	            letter-spacing: .1rem;
+
+            }
+
+            .Corps{
+ 	            margin-top: -19.8%;
+
+            }
+
+
+/*DROITE*/
+          aside {
+         
+           
+ 	             margin-left:31%;
+
+ 	             padding-left: 7%;
+ 	             margin-top: -80%;
+ 	              background-color: #FFFFFF;
+                color: #203572;
+
+
+            }
+            .section-droite{
+              padding-top: 3%;
+            }
+            .li-droite{
+              font-size: 20px;
+            }
+       /*GAUCHE....................................*/     
+nav{
+	
+	margin-right: 69%;
+			padding-left: 3%;
+			padding-top: -9.5%;
+ 	            margin-top: 19.8%;
+ 	           background-color: #57739D;
+             color: #FFFFFF;
+            }
+            .section-gauche{
+              padding-top: 3%;
+            }
+
+
+/*Responsive Media Querries */
+@media screen and (max-width:823px){
+    .right-title::after{
+        width: 40%;
+    }
+}
+@media screen and (max-width:681px){
+    .right-title::after{
+        width: 30%;
+    }
+}
+@media screen and (max-width:780px){
+    .timeline{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width:780px){
+    .left-section{
+        grid-column: span 3;
+    }
+    .right-section{
+        grid-column: span 4;
+    }
+}
+@media screen and (max-width:1200px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .profile img{
+        width: 40%;
+    }
+}
+@media screen and (max-width:700px){
+    .profile img{
+        width: 60%;
+    }
+}
+@media screen and (max-width:390px){
+    .name{
+        font-size: 1.5rem;
+    }
+}
