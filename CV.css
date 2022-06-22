@@ -2,10 +2,20 @@
  	font-family: 'Segeo UI',Tahoma, Geneva, verdana, sans-serif; 
                
             }
+.adresse i 
+{
+  margin-right: 5px;
+  font-size: 21px;
+}
+
+.adresse 
+{
+  margin-left: 10px;
+}
 .Tout{
   box-shadow: 30px 0px 40px rgb(196, 196, 196), -30px, 0px 40px rgb(196, 196, 196);
   margin: auto;
-  max-width: 900px;
+  max-width: 1000px;
   display: flex;
     flex-direction: column;
 
@@ -13,44 +23,38 @@
 .head{
   display: flex;
   width: 100%;
+  background-color: #95A2B5;
 }
-header{
- 	height: 160px;
- 	padding-top: 20px;
- 	color: black;
- 	border-color:#333;
- 	background-color: #95A2B5;
-                
-            }
-  /*.photo{
- 	 margin-left: 3%;
-    border-radius:50% solid;
-   
- 	  border-radius:50%;
- 	  width: 150px;
- 	  height: 150px;
- 	  overflow: hidden;
- 	  
-            }*/
-            .photo{
-              width: 200px;
-              padding: 10px;
-            }
-            }
-            .info{
+.Photo{
+  width: 280px;
+  padding: 8px;
+  padding-left: 6px;
+  text-align: center;
+}
+
+          .info{
               margin-right: 10px;
             }
             .nom{
               font-size: 20px;
               font-weight: bold;
               color: black;
+              padding-left: 1%;
+              letter-spacing: .1rem;
+              white-space: nowrap;
             }
            .des{
-              width: calc(100% - 200px)
+              width: calc(100% - 280px);
+
+
             }
+
             .Qui-suis-je{
               font-size: 15px;
+             width: 100%
+             letter-spacing: .1rem;
             }
+
             h3{
             	color: #3FC7DF;
             	font-weight: bold;
@@ -66,6 +70,8 @@ header{
  	            color: black;
  	            font-weight: bold;
  	            letter-spacing: .1rem;
+              padding-left: 1%;
+              white-space: nowrap;
 
             }
              .cont{
@@ -76,108 +82,87 @@ header{
             }
 
             .Corps{
- 	            /*margin-top: -19.8%;*/
+ 	           /* margin-top: -19.8%;*/
               display: flex;
             }
 
             nav{
               background-color: #57739D;
               color: #FFFFFF;
-              width: 200px;
-              padding: 10px;
+              width: 280px; 
             }
+
             aside{
               background-color: #FFFFFF;
               color: #203572;
-              width: calc(100% - 200px);
+              width: calc(100% - 280px);
+            padding-left: 2%;
             }
-/*DROITE*/
-          /*aside {
-         
-           
- 	             margin-left:31%;
-
- 	             padding-left: 7%;
- 	             margin-top: -80%;
- 	              background-color: #FFFFFF;
-                color: #203572;
-
-
-            }*/
+            .section-gauche{
+               font-size: 16px;
+              margin-left: 10px;
+            }
             .section-droite{
+
               padding-top: 3%;
             }
             .li-droite{
               font-size: 20px;
+
             }
-       /*GAUCHE....................................*/     
-/*nav{
-	
-	margin-right: 69%;
-			padding-left: 3%;
-			padding-top: -9.5%;
- 	            margin-top: 19.8%;
- 	           background-color: #57739D;
-             color: #FFFFFF;
+            .Pro{
+              padding-top: 10px;
+              padding-bottom: 10px;
             }
-            .section-gauche{
-              padding-top: 3%;
-            }
-*/
 
 /*Responsive Media Querries */
 
 
-@media screen and (max-width: 823px){
+@media screen and (max-width: 900px){
     .Tout{
         width: 100%;
+    }
+    .Photo{
+        width: 100%;
+        padding-left: 1px;
+
+    }
+    .nom{
+         width: 100%;
+      flex-direction: column;
+      padding-left: 100px;
+    white-space: nowrap;
+        padding-left: 80px;
+    }
+    .poste{
+      width: 100%;
+text-align: block;
+white-space: nowrap;
+    padding-left: 58px;
+
     }
     .head{
       width: 100%;
       flex-direction: column;
+
     }
+    
+    .Qui-suis-je{
+      padding-top: 10PX;
+      width: 100%;
+      padding-left: 10px;
+
+
+      position: absolute;
+    }
+    
     .Corps{
       width: 100%;
       flex-direction: column;
     }
     nav, aside{
       width: 100%;
+      padding-top: 72px;
     }
-}
-/*
-@media screen and (max-width:681px){
-    .right-title::after{
-        width: 30%;
-    }
-}
-@media screen and (max-width:780px){
-    .timeline{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-@media screen and (max-width:780px){
-    .left-section{
-        grid-column: span 3;
-    }
-    .right-section{
-        grid-column: span 4;
-    }
-}
-@media screen and (max-width:1200px){
-    .main-content{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .profile img{
-        width: 40%;
-    }
-}
-@media screen and (max-width:700px){
-    .profile img{
-        width: 60%;
-    }
-}
-@media screen and (max-width:390px){
-    .name{
-        font-size: 1.5rem;
-    }
-}*/
+     
+}    

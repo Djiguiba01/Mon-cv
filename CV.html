@@ -5,33 +5,40 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CV.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-	<div class="Tout">
+            <!-- DEBUT LE CORPS DU CV -->  
 
+	<div class="Tout">                                           <!--  DEBUT EN ENTETE -->
 	<div class="head">
-		<div class="photo">
-			<img src="images/djiguiba.jpg" width="150" height="250" alt="image">
+		<div class="Photo">
+			<img src="images/djiguiba.jpg" width="150" height="250" alt="image" style="border-radius: 50%; overflow: hidden; width: 150px;
+      height: 150px">
 		</div>
 
-		<div class=" des">
+		<div class="des">
 			<p class="nom">DJIGUIBA BAREMA</p>
 			<p class="poste"> Développeur web et mobile</p>
 		
-		    <div class="Qui-suis-je"> Je suis ingénieur logiciel, je crée des applications très performantes grâce à une architecture organisée. J'ai également de l'expérience dans la conception de produits et la relation clientèle.</div>  
-		</div>
+		    <div class="Qui-suis-je"> Je suis ingénieur logiciel, je crée des applications très performantes grâce à une architecture organisée.<br>J'ai également de l'expérience dans la conception de produits et la relation clientèle.</div>  
+        </div>
 	</div>
+                                           <!-- FIN ENTETE -->
 
-<div class="Corps">
-	<nav>
-	<div class="section-gauche">
+
+<div class="Corps"><!-- DEBUT PARTIE GAUCHE ET DROITE  -->
+
+                                                  <!-- DEBUT DE LA PARTIE GAUCHE DU CV -->
+        	<nav>
+        	<div class="section-gauche">
 
        <h2>Addresse</h2>
-		<div class="Addresse">
-			<p><img src="images/téléphone.png" width="20" height="20" alt="photo" class="info">+223 373100973/ 64347072</p>
-			<p><img src="images/email.png" width="20" height="20" alt="photo" class="info">djiguibabarema@gmail.com</p>
-			<p><img src="images/adresse2.png" width="20" height="20" alt="photo" class="info">Mali/Bamako</p>
-			<p><img src="images/git.png" width="20" height="20" alt="photo" class="info">Git</p>
+		<div class="adresse">
+			<p><i class="fa fa-phone" aria-hidden="true"></i>+223 73100973</p>
+			<p><i class="fa fa-envelope-o" aria-hidden="true"></i>djiguibabarema@gmail.com</p>
+			<p><i class="fa fa-map-marker" aria-hidden="true"></i>Mali/Bamako</p>
+			<p><i class="fa fa-github" aria-hidden="true"></i>https://github.com/Djiguiba01</p>
 		 </div>
 
 		 <div class="COMPETENCES">
@@ -39,11 +46,10 @@
             <strong>Professionnelles</strong>
              <ul>
             <li> Ms offiche</li>
-            <li> Photoshop</li>
-            <li> Illustrator</li>
-            <li> WordPress</li>
-            <li> Spss</li>
-            <li> Sage</li>
+            <li> Webflow</li>
+            <li> Airtable</li>
+            <li> Zapier</li>
+            
          </ul>
 
          <strong>PERSONELLE</strong>
@@ -54,8 +60,7 @@
             <li> Créativité</li>
            </ul>
          </div>
-         </div>
-
+        
          <div class="langues">
         	<h2>LANGUES</h2>
 		 <ul>
@@ -65,17 +70,20 @@
             <li> Anglais</li>
          </ul>
 		 </div>
-</nav>
-<aside>
-	   <div class="section-droite">
-		<h2>EXPERIENCE PROFESSIONELLES</h2>
-		<div class="AA">
+         </div>
+         </nav>
+          <aside>
+                                   <!--    FIN PARTIE GAUCHE -->
+                                                         <!--  DEBUT DE LA PARTIE DROITE -->
+	      <div class="section-droite">
+		 <h2>EXPERIENCE PROFESSIONELLES</h2>
+		 <div class="AA">
 			<ul>
             <li class="li-droite"> Ingénieur logiciel</li>
-            Développe des systèmes et des outils qui sont basés sur la performance et sur l'extensibilité
-            Maintient le schéma de base de données ainsi que les spécifications fonctionnelles et techniques
+           <div class="Pro"> Développe des systèmes et des outils qui sont basés sur la performance et sur l'extensibilité
+            Maintient le schéma de base de données ainsi que les spécifications fonctionnelles et techniques</div>
             <li class="li-droite"> Développeur de logiciel</li>
-            <div class="ali"> A participé à tous les aspects d'un projet, de la conception en passant par le développement jusqu'aux tests 
+            <div class="Pro"> A participé à tous les aspects d'un projet, de la conception en passant par le développement jusqu'aux tests 
             A travaillé à la maintenance et aux améliorations des applications existantes</div>
            </ul>
 		</div>
@@ -83,9 +91,9 @@
 		<div class="AA">
 			<ul>
             <li class="li-droite"> Université TechnoLab-Ista</li>
-            <span>Master en ingénierie des logiciels</span> 
-              <p>A suivi des cours approfondis sur l'architecture des systèmes et sur la recherche informatique 
-             A participé à des projets de système en entreprise</p>
+            <div class="Pro">Master en ingénierie des logiciels<br>
+               A suivi des cours approfondis sur l'architecture des systèmes et sur la recherche informatique 
+             A participé à des projets de système en entreprise</div>
             
              <li class="li-droite"> Institut Universitaire de Gestion(IUG)</li>
             </div>Licence d'informatique Mention très bien 
@@ -94,6 +102,8 @@
            </ul>
 		</div>
 	  </aside>
-</div>	
+                                                  <!--    FIN PARTIE DROITE -->
+</div>
+                <!-- FIN LE CORPS DU CV	 -->
 </body>
 </html>
