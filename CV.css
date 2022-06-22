@@ -144,13 +144,14 @@ white-space: nowrap;
     .head{
       width: 100%;
       flex-direction: column;
+      padding-bottom: 100Px;
 
     }
     
     .Qui-suis-je{
       padding-top: 10PX;
       width: 100%;
-      padding-left: 10px;
+      padding-left: 3px;
 
 
       position: absolute;
@@ -162,7 +163,7 @@ white-space: nowrap;
     }
     nav, aside{
       width: 100%;
-      padding-top: 72px;
+      padding-top: 12px;
     }
      
 }    
